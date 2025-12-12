@@ -3,4 +3,4 @@ We ground fundus quality assessment in anatomical integrity rather than subjecti
 
 Currently under review in MIDL2026: https://openreview.net/forum?id=b9TBF3O88T
 
-Code coming soon
+Code coming soon; test our model directly online at https://huggingface.co/spaces/penway47/EFIQA
