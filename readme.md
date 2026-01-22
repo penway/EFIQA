@@ -22,7 +22,7 @@ pip install -e .
 ```
 
 ### Training VUAD
-#### Prepareing the dataset
+#### Preparing the dataset
 You can use any dataset and segmentor you like, and could be binary segmentation or artery/vien segmentaion. To reproduce the results, we used the [Messidor-2](https://www.adcis.net/en/third-party/messidor2/) dataset. Cropping the edge to square and use [RRW-Net](https://github.com/j-morano/rrwnet) for segmentation, you can follow the instruction in [R2-V2](https://github.com/j-morano/R2-V2) and we used the bv model. We filter out several images as is shown in `src/vuad/config/Messidor_NSFS.txt`. For easy retraining the model, we will upload the segmented data.
 
 #### Running the training
