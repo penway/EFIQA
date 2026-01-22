@@ -1,0 +1,51 @@
+meta:
+  version: v0.0.1
+  description: Linear
+
+traindata:
+  key: PatchDataset 
+  params:
+    patch_dataset_path: /home/penway/Projects/FIQA/IQX/data/MSHF/patch/mshf_patch_dataset.npz
+    balance: False
+
+valdata:
+  key: SIFDataset
+  params:
+    feat_dir: /home/penway/Projects/FIQA/IQX/data/MSHF/emb
+    seg_dir: /home/penway/Projects/FIQA/IQX/data/MSHF/seg/vuad/patch
+    img_dir: /home/penway/Projects/datasets/IQX/MSHF/images
+  val_sample_num: 9
+  val_img_cols: 3
+
+trainer:
+  batch_size: 4096 
+  epochs: 100
+  device: cuda
+  seed: 0504 
+  num_workers: 8
+  log_interval: 200
+  ckpt_interval: 20
+
+optim:
+  key: adamw
+  params:
+    lr: 0.001
+
+model:
+  key: sc_linear 
+  params:
+    input_dim: 1024
+    output_dim: 1
+
+loss:
+  key: bce_pos_weight
+  params: 
+    pos_weight: 9.58   # 19402 positive (LQ) and 185910 HQ in MSHF
+
+hydra:
+  job:
+    chdir: false
+  run:
+    dir: ./experiments/badish/${now:%Y%m%d_%H%M%S}
+  sweep:
+    dir: ./experiments/badish/sweeps/${now:%Y%m%d_%H%M%S}/multirun

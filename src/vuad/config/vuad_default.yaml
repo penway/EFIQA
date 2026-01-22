@@ -1,0 +1,62 @@
+meta:
+  version: v0.0.2
+  description: U-Net + Degregate + MSE Loss; More Corrupt
+data:
+  path: /home/penway/Projects/datasets/IQX/PWHQ/bv_0915
+  resize: 256
+  fov_crop:
+    enabled: true
+    params:
+      ratio_range:
+      - 0.5
+      - 1.0
+      pixel_limits: 224
+      schedule: linear
+      start_epoch: 20
+      end_epoch: 80
+      start_p: 0.0
+      end_p: 0.5
+trainer:
+  batch_size: 16
+  epochs: 200
+  device: cuda
+  seed: 36
+  num_workers: 8
+  log_interval: 200
+  ckpt_interval: 10
+optim:
+  key: adamw
+  params:
+    lr: 0.001
+model:
+  key: unet_res
+  params:
+    input_ch: 3
+    output_ch: 3
+    base_ch: 64
+degrade:
+  key: progressive
+  params:
+    patch_range:
+    - 4
+    - 32
+    init_ratio_range:
+    - 0.8
+    - 1
+    final_ratio_range:
+    - 0.0
+    - 1
+    transition_start: 20
+    transition_end: 80
+    p: 1.0
+    return_mask: false
+loss:
+  key: mse
+  params: {}
+hydra:
+  job:
+    chdir: false
+  run:
+    dir: ./experiments/vuad/${now:%Y%m%d_%H%M%S}
+  sweep:
+    dir: ./experiments/vuad/${now:%Y%m%d_%H%M%S}/multirun
