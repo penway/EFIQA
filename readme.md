@@ -1,3 +1,5 @@
+<img width="2400" height="400" alt="AAA" src="https://github.com/user-attachments/assets/93157862-5734-43f5-b923-29faf69f55c1" />
+
 # EFIQA: Explainable Fundus Image Quality Assessment via Anatomical Priors
 We ground fundus quality assessment in anatomical integrity rather than subjective labels, enabling an unsupervised approach with spatial explainability and robust cross-dataset generalization.
 
