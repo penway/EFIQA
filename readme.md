@@ -1,7 +1,7 @@
 <img width="2400" height="400" alt="AAA" src="https://github.com/user-attachments/assets/93157862-5734-43f5-b923-29faf69f55c1" />
 
 # EFIQA: Explainable Fundus Image Quality Assessment via Anatomical Priors
-
+[![Hugging Face Model](https://img.shields.io/badge/🤗%20HF-Model-orange)](https://huggingface.co/penway47/EFIQA)
 [![Hugging Face Space](https://img.shields.io/badge/🤗%20Hugging%20Face-Space-orange)](https://huggingface.co/spaces/penway47/EFIQA)
 [![OpenReview](https://img.shields.io/badge/OpenReview-Paper-blue)](https://openreview.net/forum?id=b9TBF3O88T)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](./LICENSE)
