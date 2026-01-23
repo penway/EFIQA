@@ -1,10 +1,12 @@
 <img width="2400" height="400" alt="AAA" src="https://github.com/user-attachments/assets/93157862-5734-43f5-b923-29faf69f55c1" />
 
+
+[![Hugging Face Model](https://img.shields.io/badge/🤗%20HF-Model-820263?labelColor=18152e)](https://huggingface.co/penway47/EFIQA)
+[![Hugging Face Space](https://img.shields.io/badge/🤗%20Hugging%20Face-Space-d90368?labelColor=18152e)](https://huggingface.co/spaces/penway47/EFIQA)
+[![OpenReview](https://img.shields.io/badge/OpenReview-Paper-eadeda?labelColor=18152e)](https://openreview.net/forum?id=b9TBF3O88T)
+[![License: MIT](https://img.shields.io/badge/License-MIT-ffd400?labelColor=18152e)](./LICENSE)
+
 # EFIQA: Explainable Fundus Image Quality Assessment via Anatomical Priors
-[![Hugging Face Model](https://img.shields.io/badge/🤗%20HF-Model-orange)](https://huggingface.co/penway47/EFIQA)
-[![Hugging Face Space](https://img.shields.io/badge/🤗%20Hugging%20Face-Space-orange)](https://huggingface.co/spaces/penway47/EFIQA)
-[![OpenReview](https://img.shields.io/badge/OpenReview-Paper-blue)](https://openreview.net/forum?id=b9TBF3O88T)
-[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](./LICENSE)
 
 We ground fundus quality assessment in anatomical integrity rather than subjective labels, enabling an unsupervised approach with spatial explainability and robust cross-dataset generalization.
 
