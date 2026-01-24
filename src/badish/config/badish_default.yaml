@@ -19,12 +19,12 @@ valdata:
 
 trainer:
   batch_size: 4096 
-  epochs: 100
+  epochs: 20
   device: cuda
   seed: 0504 
   num_workers: 8
   log_interval: 200
-  ckpt_interval: 20
+  ckpt_interval: 1
 
 optim:
   key: adamw
