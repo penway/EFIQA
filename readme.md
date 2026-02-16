@@ -8,9 +8,11 @@
 
 # EFIQA: Explainable Fundus Image Quality Assessment via Anatomical Priors
 
+**Pengwei Wang, José Morano, Qian Wan, Hrvoje Bogunović**
+
 We ground fundus quality assessment in anatomical integrity rather than subjective labels, enabling an unsupervised approach with spatial explainability and robust cross-dataset generalization.
 
-Accpeted in MIDL2026: https://openreview.net/forum?id=b9TBF3O88T
+Accepted in MIDL2026: https://openreview.net/forum?id=b9TBF3O88T
 
 ## Inference
 Test our model directly online at: https://huggingface.co/spaces/penway47/EFIQA. You can also download script and weight there.
