@@ -10,10 +10,11 @@
 
 We ground fundus quality assessment in anatomical integrity rather than subjective labels, enabling an unsupervised approach with spatial explainability and robust cross-dataset generalization.
 
-Currently under review in MIDL2026: https://openreview.net/forum?id=b9TBF3O88T
+Accpeted in MIDL2026: https://openreview.net/forum?id=b9TBF3O88T
 
 ## Inference
 Test our model directly online at: https://huggingface.co/spaces/penway47/EFIQA. You can also download script and weight there.
+Download weights here: [v0.0.0 release](https://github.com/penway/EFIQA/releases/tag/v0.0.0-beta).
 
 ## Training
 ### Preparation
